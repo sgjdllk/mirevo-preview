@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>      
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мірево — Інтернет-магазин товарів для дому</title>     
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header>
+        <div class="logo">
+            <a href="index.html">Мірево</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#news">Новини</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+                <li><a href="#survey">Анкета</a></li>
+            </ul>
+        </nav>
+
+        <form role="search" action="#" method="get">
+            <label for="search">Пошук</label>
+            <input type="search" id="search" name="q" placeholder="Пошук товарів...">
+            <button type="submit">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+    Знайти
+</button>
+        </form>
+
+        <div class="auth-buttons">
+            <a href="login.html">Увійти</a>
+            <a href="register.html">Реєстрація</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Речі, що створюють атмосферу</h1>
+                <p>Твій дім. Твій стиль. Твоє МІРЕВО. &hearts;</p>
+                <a href="catalog.html" class="btn-primary">Перейти до каталогу</a>
+            </div>
+            <img src="images/hero-banner.jpg" alt="Затишний інтер'єр вітальні у теплих тонах">
+        </section>
+                <section class="products">
+            <h2>Популярні товари</h2>
+            <ul class="product-list">
+                <li class="product-card">
+                    <img src="images/product1.jpg" alt="Свічка ароматична в кераміці">
+                    <h3>Ароматична свічка "Затишок"</h3>
+                    <p>350 грн</p>
+                </li>
+                <li class="product-card">
+                    <img src="images/product2.jpg" alt="Плед вовняний бежевий">
+                    <h3>Плед вовняний "Тепло"</h3>
+                    <p>890 грн</p>
+                </li>
+                <li class="product-card">
+                    <img src="images/product3.jpg" alt="Керамічна ваза для квітів">
+                    <h3>Ваза керамічна "Флора"</h3>
+                    <p>620 грн</p>
+                </li>
+                <li class="product-card">
+                    <img src="images/product4.jpg" alt="Набір посуду з дерева">
+                    <h3>Набір дерев'яного посуду</h3>
+                    <p>1240 грн</p>
+                </li>
+            </ul>
+        </section>
+                <section id="news" class="news">
+            <h2>Новини</h2>
+            <article class="news-item">
+                <img src="images/news1.jpg" alt="Нова колекція осінь-зима">
+                <h3>Стартувала нова колекція "Осінь-Зима 2026"</h3>
+                <time datetime="2026-09-15">15 вересня 2026</time>
+                <p>Представляємо теплі пледи, свічки з ароматом кориці та кераміку у бежевих відтінках — все, щоб створити затишок у вашому домі цієї осені.</p>
+                <a href="#">Читати далі</a>
+            </article>
+
+            <article class="news-item">
+                <img src="images/news2.jpg" alt="Знижки на декор">
+                <h3>Знижки до 20% на весь декор для дому</h3>
+                <time datetime="2026-09-10">10 вересня 2026</time>
+                <p>До кінця місяця діють знижки на вази, свічники та текстильний декор. Встигніть оновити інтер'єр за вигідною ціною.</p>
+                <a href="#">Читати далі</a>
+            </article>
+
+            <article class="news-item">
+                <img src="images/news3.jpg" alt="Новий магазин у Києві">
+                <h3>Відкрили новий шоурум у Києві</h3>
+                <time datetime="2026-09-01">1 вересня 2026</time>
+                <p>Тепер ви можете побачити наші товари наживо за адресою Шевченка 22, Київ. Чекаємо на вас щодня.</p>
+                <a href="#">Читати далі</a>
+            </article>
+        </section>
+                <section id="contacts" class="contacts">
+            <h2>Зв'яжіться з нами</h2>
+
+            <div class="contacts-info">
+                <address>
+                    <p>Адреса: Шевченка 22, Київ, Україна</p>
+                    <p>Телефон: <a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
+                    <p>Email: <a href="mailto:info@mirevo.ua">info@mirevo.ua</a></p>
+                    <p>Графік роботи: цілодобово</p>
+                </address>
+            </div>
+
+            <form class="feedback-form" action="#" method="post">
+                <h3>Напишіть нам</h3>
+
+                <label for="fb-name">Ім'я</label>
+                <input type="text" id="fb-name" name="name" placeholder="Ваше ім'я" required>
+
+                <label for="fb-email">Електронна пошта</label>
+                <input type="email" id="fb-email" name="email" placeholder="you@example.com" required>
+
+                <label for="fb-message">Повідомлення</label>
+                <textarea id="fb-message" name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити</button>
+            </form>
+        </section>
+                        <section id="survey" class="survey">
+            <h2>Анкета клієнта</h2>
+            <form class="survey-form" action="#" method="post">
+
+                <label for="s-login">Логін</label>
+                <input type="text" id="s-login" name="login" placeholder="Ваш логін" required>
+
+                <label for="s-email">Електронна пошта</label>
+                <input type="email" id="s-email" name="email" placeholder="you@example.com" required>
+
+                <label for="s-comment">Коментар</label>
+                <textarea id="s-comment" name="comment" rows="3" placeholder="Ваш коментар..."></textarea>
+
+                <label for="s-room">Кімната</label>
+                <select id="s-room" name="room">
+                    <option value="living" selected>Вітальня</option>
+                    <option value="bedroom">Спальня</option>
+                    <option value="kitchen">Кухня</option>
+                </select>
+
+                <fieldset>
+                    <legend>Частота покупок</legend>
+                    <label><input type="radio" name="frequency" value="monthly" checked> Щомісяця</label>
+                    <label><input type="radio" name="frequency" value="rarely"> Рідко</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Джерело</legend>
+                    <label><input type="radio" name="source" value="instagram" checked> Instagram</label>
+                    <label><input type="radio" name="source" value="google"> Google</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Інтереси</legend>
+                    <label><input type="checkbox" name="interests" value="decor"> Декор</label>
+                    <label><input type="checkbox" name="interests" value="textile"> Текстиль</label>
+                </fieldset>
+
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити</button>
+            </form>
+        </section>
+    </main>
+        <footer>
+        <p>&copy; 2026 Мірево. Всі права захищені.</p>
+        <p>Шевченка 22, Київ, Україна</p>
+    </footer>
+</body>
+</html>                                                                                                                                                    
